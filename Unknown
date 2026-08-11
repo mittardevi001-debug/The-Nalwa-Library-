@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Nalwa Library - ज्ञान, अध्ययन और सफलता का केंद्र">
+<title>The Nalwa Library | ज्ञान का केंद्र</title>
+<style>
+:root{--primary:#173b6c;--secondary:#f4b942;--light:#f5f8fc;--dark:#12233d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#26364a;background:#fff;line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 14px #0001;padding:14px 6%}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:21px;font-weight:800;color:var(--primary)}
+.logo span{color:var(--secondary)}
+.nav a{color:#26364a;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{background:linear-gradient(135deg,#173b6c,#2864a4);color:#fff;padding:75px 6% 85px;text-align:center}
+.hero h1{font-size:clamp(38px,7vw,68px);margin-bottom:10px}
+.hero h1 span{color:#ffd166}
+.hero p{font-size:20px;max-width:700px;margin:0 auto 28px;opacity:.95}
+.btn{display:inline-block;background:#f4b942;color:#142a48;padding:13px 25px;border-radius:30px;text-decoration:none;font-weight:800;margin:5px}
+.btn.alt{background:#fff}
+section{padding:65px 6%}
+.container{max-width:1100px;margin:auto}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:34px;color:var(--primary)}
+.title p{color:#65748a;margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #e4eaf2;border-radius:18px;padding:25px;box-shadow:0 8px 25px #173b6c10;text-align:center}
+.icon{font-size:40px;margin-bottom:12px}
+.card h3{color:var(--primary);margin-bottom:7px}
+.about{background:var(--light)}
+.search{max-width:650px;margin:0 auto 30px;display:flex}
+.search input{flex:1;padding:15px 18px;border:2px solid #dce4ef;border-radius:30px 0 0 30px;font-size:16px;outline:none}
+.search button{border:0;background:var(--primary);color:#fff;padding:0 23px;border-radius:0 30px 30px 0;font-weight:bold}
+.book{display:none;text-align:left}
+.book.show{display:block}
+.contact{background:#12233d;color:#fff}
+.contact .title h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.contact-box{background:#ffffff12;border:1px solid #ffffff20;border-radius:16px;padding:22px}
+footer{background:#0c192b;color:#b9c5d4;text-align:center;padding:20px}
+@media(max-width:700px){.nav{flex-direction:column}.nav a{margin:0 7px;font-size:14px}.hero{padding-top:55px}.search input{width:50%}}
+
+.notification-wrap{max-width:850px;margin:auto}
+.alert-banner{background:#fff3cd;border:1px solid #f4d58d;color:#6b4e00;border-radius:14px;padding:14px 18px;margin-bottom:22px;font-weight:700}
+.notifications{display:grid;gap:14px}
+.notice{background:#fff;border:1px solid #e4eaf2;border-left:5px solid #173b6c;border-radius:14px;padding:18px;box-shadow:0 5px 18px #173b6c10}
+.notice .tag{display:inline-block;background:#eaf1fb;color:#173b6c;border-radius:20px;padding:4px 10px;font-size:12px;font-weight:800;margin-bottom:7px}
+.notice h3{color:#173b6c;margin-bottom:4px}
+.notice p{color:#65748a}
+.notice a{display:inline-block;margin-top:9px;color:#173b6c;font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+<nav>
+<div class="nav">
+<div class="logo">📚 The Nalwa <span>Library</span></div>
+<div><a href="#home">Home</a><a href="#books">Books</a><a href="#notifications">Alerts</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</div>
+</nav>
+
+<header class="hero" id="home">
+<h1>The Nalwa <span>Library</span></h1>
+<p>ज्ञान, अध्ययन और सफलता का केंद्र — पढ़िए, सीखिए और अपने सपनों को साकार कीजिए।</p>
+<a class="btn" href="#books">📖 Books देखें</a>
+<a class="btn alt" href="#contact">📞 Contact</a>
+</header>
+
+<section id="notifications" class="about">
+<div class="container notification-wrap">
+<div class="title"><h2>🔔 Live Exam Notification Alerts</h2>
+<p>Official websites से नई भर्ती, Exam, Admit Card और Result की जानकारी</p></div>
+
+<div class="alert-banner">⚡ Important: नीचे दिए गए buttons पर tap करके official notification सीधे खोलें।</div>
+
+<div class="notifications">
+<div class="notice">
+<span class="tag">HARYANA</span>
+<h3>🟢 HSSC — Haryana Recruitment</h3>
+<p>Group C/D, CET, भर्ती विज्ञापन, notices और results.</p>
+<a href="https://hssc.gov.in/advertisement" target="_blank" rel="noopener">Official HSSC Notifications →</a>
+</div>
+
+<div class="notice">
+<span class="tag">SSC</span>
+<h3>🔵 SSC — Staff Selection Commission</h3>
+<p>SSC exams, recruitment notifications और examination calendar.</p>
+<a href="https://ssc.gov.in/home/ssc-calendar" target="_blank" rel="noopener">SSC Exam Calendar →</a>
+<a href="https://ssc.gov.in/home/apply" target="_blank" rel="noopener" style="margin-left:16px">SSC Apply →</a>
+</div>
+
+<div class="notice">
+<span class="tag">UPSC</span>
+<h3>🟣 UPSC — Civil Services & Other Exams</h3>
+<p>UPSC exam notifications, active examinations और important updates.</p>
+<a href="https://www.upsc.gov.in/exams-related-info/exam-notification" target="_blank" rel="noopener">UPSC Notifications →</a>
+<a href="https://www.upsc.gov.in/whats-new" target="_blank" rel="noopener" style="margin-left:16px">UPSC What's New →</a>
+</div>
+
+<div class="notice">
+<span class="tag">RAILWAY</span>
+<h3>🚆 Indian Railways / RRB</h3>
+<p>Railway recruitment और official vacancy notices.</p>
+<a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?id=0%2C5%2C373%2C3147&lang=0" target="_blank" rel="noopener">Railway Vacancy Notices →</a>
+</div>
+
+<div class="notice">
+<span class="tag">RESULT</span>
+<h3>🏆 HSSC Results & Notices</h3>
+<p>Haryana भर्ती के results, PMT notices और अन्य updates.</p>
+<a href="https://hssc.gov.in/result" target="_blank" rel="noopener">HSSC Results →</a>
+</div>
+</div>
+
+<div class="card" style="margin-top:25px;text-align:center">
+<p><b>📅 Last checked:</b> 11 August 2026</p>
+<p style="margin-top:5px;color:#65748a">Official portals के links दिए गए हैं ताकि गलत/fake notification से बचा जा सके।</p>
+</div>
+</div>
+</section>
+
+
+
+<section>
+<div class="container">
+<div class="title"><h2>हमारी सुविधाएँ</h2><p>आपकी पढ़ाई को बेहतर बनाने के लिए</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📚</div><h3>Book Collection</h3><p>विभिन्न विषयों की उपयोगी किताबें।</p></div>
+<div class="card"><div class="icon">🪑</div><h3>Study Space</h3><p>शांत और सुविधाजनक अध्ययन वातावरण।</p></div>
+<div class="card"><div class="icon">📝</div><h3>Competitive Exams</h3><p>HSSC, SSC, UPSC एवं अन्य परीक्षाओं की तैयारी।</p></div>
+<div class="card"><div class="icon">📶</div><h3>Modern Facilities</h3><p>अध्ययन के लिए आधुनिक सुविधाएँ।</p></div>
+</div>
+</div>
+</section>
+
+<section id="books" class="about">
+<div class="container">
+<div class="title"><h2>📖 Book Search</h2><p>नीचे किताब का नाम या विषय लिखकर खोजें</p></div>
+<div class="search"><input id="search" placeholder="जैसे: Haryana GK, Maths, Physics..."><button onclick="searchBooks()">Search</button></div>
+<div class="cards" id="bookList">
+<div class="card book show" data-name="haryana gk haryana history"><div class="icon">📘</div><h3>Haryana GK</h3><p>हरियाणा सामान्य ज्ञान एवं इतिहास</p></div>
+<div class="card book show" data-name="mathematics maths गणित"><div class="icon">📐</div><h3>Mathematics</h3><p>गणित एवं प्रतियोगी परीक्षा सामग्री</p></div>
+<div class="card book show" data-name="physics भौतिक विज्ञान"><div class="icon">⚛️</div><h3>Physics</h3><p>भौतिक विज्ञान के अध्ययन हेतु</p></div>
+<div class="card book show" data-name="english english grammar"><div class="icon">📕</div><h3>English</h3><p>English Grammar एवं Vocabulary</p></div>
+<div class="card book show" data-name="computer computer science"><div class="icon">💻</div><h3>Computer</h3><p>Computer एवं IT अध्ययन सामग्री</p></div>
+<div class="card book show" data-name="general knowledge gk सामान्य ज्ञान"><div class="icon">📗</div><h3>General Knowledge</h3><p>सामान्य ज्ञान एवं Current Affairs</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="title"><h2>🏫 The Nalwa Library के बारे में</h2><p>हमारा उद्देश्य पढ़ने और सीखने के लिए बेहतर वातावरण देना है।</p></div>
+<div class="card"><p> <b>The Nalwa Library</b> विद्यार्थियों और प्रतियोगी परीक्षाओं की तैयारी करने वाले अभ्यर्थियों के लिए एक अध्ययन केंद्र के रूप में बनाया गया है। यहाँ ज्ञान, अनुशासन और निरंतर अध्ययन को प्राथमिकता दी जाती है।</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<div class="title"><h2>📞 Contact Us</h2><p>लाइब्रेरी से जुड़ी जानकारी के लिए संपर्क करें।</p></div>
+<div class="contact-grid">
+<div class="contact-box"><h3>📍 Address</h3><p>Nalwa, Haryana, India</p></div>
+<div class="contact-box"><h3>📱 Phone</h3><p>अपना मोबाइल नंबर यहाँ जोड़ें</p></div>
+<div class="contact-box"><h3>🕐 Timing</h3><p>अपना Library Timing यहाँ जोड़ें</p></div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 The Nalwa Library • ज्ञान से सफलता तक 📚 • Exam Alerts</footer>
+
+<script>
+function searchBooks(){
+ const q=document.getElementById('search').value.toLowerCase().trim();
+ document.querySelectorAll('.book').forEach(b=>{
+   b.classList.toggle('show',!q || b.dataset.name.includes(q) || b.innerText.toLowerCase().includes(q));
+ });
+}
+document.getElementById('search').addEventListener('input',searchBooks);
+</script>
+</body>
+</html>
