@@ -1,0 +1,243 @@
+.library h2{
+    color:#b40000;
+    margin-bottom:8px;
+}
+
+.library p{
+    line-height:1.6;
+}
+
+.library-buttons{
+    margin-top:15px;
+}
+
+.library-buttons a{
+    display:inline-block;
+    padding:11px 18px;
+    margin:4px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:3px;
+}
+
+.library-btn{
+    background:#005da8;
+}
+
+.quiz-btn{
+    background:#087b39;
+}
+
+/* ================= SOCIAL ================= */
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.social a{
+    text-decoration:none;
+    color:white;
+    padding:11px 20px;
+    border-radius:3px;
+    font-weight:bold;
+}
+
+.youtube{
+    background:#d60000;
+}
+
+.telegram{
+    background:#0088cc;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:25px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+}
+
+footer h2{
+    margin-bottom:8px;
+}
+
+footer p{
+    margin:8px 0;
+    line-height:1.5;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 6px;
+}
+
+footer a:hover{
+    color:#ffcc00;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .header h1{
+        font-size:28px;
+    }
+
+    .big-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .three-column{
+        grid-template-columns:1fr;
+    }
+
+    .important-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .container{
+        width:94%;
+    }
+
+    .header h1{
+        font-size:23px;
+    }
+
+    .header p{
+        font-size:12px;
+    }
+
+    .navbar ul{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .navbar li{
+        text-align:center;
+        border-bottom:1px solid #333;
+    }
+
+    .search-area{
+        flex-direction:column;
+    }
+
+    .search-area button{
+        padding:12px;
+    }
+
+    .notice{
+        display:block;
+    }
+
+    .notice-title{
+        text-align:center;
+    }
+
+    .big-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .big-box h2{
+        font-size:17px;
+    }
+
+    .big-box p{
+        font-size:11px;
+    }
+
+    .important-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <h1>THE NALWA LIBRARY</h1>
+
+        <p>
+            Haryana Government Exams | Study Material | Notes | Quiz | Latest Updates
+        </p>
+
+    </div>
+
+</header>
+
+
+<div class="container">
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-area">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Jobs, Notes, Quiz, Results..."
+        onkeyup="searchContent()"
+    >
+
+    <button onclick="searchContent()">SEARCH</button>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="#">HOME</a></li>
+
+<li><a href="#">LATEST JOBS</a></li>
+
+<li><a href="#">RESULTS</a></li>
+
+<li><a href="#">ADMIT CARD</a></li>
+
+<li><a href="#">ANSWER KEY</a></li>
+
+<li><a href="#">NOTES</a></li>
+
+<li><a href="#">QUIZ</a></li>
+
+<li><a href="#">CONTACT</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- ================= NOTICE ================= -->
+
+<div class="notice">
+
+<div class="notice-title">
+LATEST UPDATE
+</div>
+
+<marquee>
+
+The Nalwa Library पर Haryana Jobs, HSSC, CET
