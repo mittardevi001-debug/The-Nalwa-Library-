@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="The Nalwa Library - Study material, notes, previous papers and exam notifications.">
+  <title>The Nalwa Library</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">NL</div>
+    <div><b>The Nalwa Library</b><small>Study • Notes • Exams</small></div>
+  </div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#notifications">Notifications</a><a href="#study">Study</a>
+    <a href="#papers">PYQ</a><a href="#links">Links</a>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div>
+    <span class="badge">📚 YOUR DIGITAL LIBRARY</span>
+    <h1>Learn More.<br><span>Score Better.</span></h1>
+    <p>Notes, previous year papers, study material and exam alerts — all in one place.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="#notifications">🔔 Exam Alerts</a>
+      <a class="btn secondary" href="#study">📖 Study Material</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="big-icon">📚</div>
+    <h3>The Nalwa Library</h3>
+    <p>One place for your preparation.</p>
+    <div class="stats"><div><b>24×7</b><small>Access</small></div><div><b>FREE</b><small>Resources</small></div></div>
+  </div>
+</section>
+
+<section class="quick">
+  <a href="#notifications"><span>🔔</span><b>Exam Alerts</b><small>Latest updates</small></a>
+  <a href="#study"><span>📝</span><b>Notes</b><small>Subject wise</small></a>
+  <a href="#papers"><span>📄</span><b>PYQ</b><small>Previous papers</small></a>
+  <a href="#links"><span>🔗</span><b>Official Links</b><small>Direct access</small></a>
+</section>
+
+<section id="notifications" class="section">
+  <div class="section-head"><div><span class="eyebrow">LATEST</span><h2>🔔 Exam Notification Alerts</h2></div><input id="search" oninput="filterCards()" placeholder="Search exam..."></div>
+  <p class="muted">Check official websites before applying. This section is ready for adding new alerts.</p>
+  <div id="alerts" class="grid">
+    <article class="card alert"><span class="tag red">HARYANA</span><h3>HSSC / Haryana Exams</h3><p>Recruitment, CET and other Haryana exam updates.</p><a href="https://www.hssc.gov.in/" target="_blank">Official Website →</a></article>
+    <article class="card alert"><span class="tag blue">POLICE</span><h3>Haryana Police</h3><p>Recruitment and examination information.</p><a href="https://hssc.gov.in/" target="_blank">Official Website →</a></article>
+    <article class="card alert"><span class="tag green">SSC</span><h3>SSC Exams</h3><p>SSC CGL, CHSL, MTS, GD and other updates.</p><a href="https://ssc.gov.in/" target="_blank">Official Website →</a></article>
+    <article class="card alert"><span class="tag purple">RAILWAY</span><h3>Railway / RRB</h3><p>Recruitment and examination notifications.</p><a href="https://www.rrbapply.gov.in/" target="_blank">Official Website →</a></article>
+    <article class="card alert"><span class="tag orange">UPSC</span><h3>UPSC Exams</h3><p>Civil Services and other UPSC examinations.</p><a href="https://upsc.gov.in/" target="_blank">Official Website →</a></article>
+    <article class="card alert"><span class="tag teal">EDUCATION</span><h3>Teaching / Education</h3><p>Teacher recruitment and education-related updates.</p><a href="https://www.education.gov.in/" target="_blank">Official Website →</a></article>
+  </div>
+</section>
+
+<section id="study" class="section alt">
+  <div class="section-head"><div><span class="eyebrow">PREPARE</span><h2>📖 Study Material</h2></div></div>
+  <div class="grid">
+    <article class="card"><span class="icon">🧠</span><h3>General Knowledge</h3><p>GK, current affairs and important facts.</p><button onclick="comingSoon()">Open Material</button></article>
+    <article class="card"><span class="icon">🔬</span><h3>Science</h3><p>Physics, Chemistry and Biology notes.</p><button onclick="comingSoon()">Open Material</button></article>
+    <article class="card"><span class="icon">➗</span><h3>Mathematics</h3><p>Concepts, formulas and practice questions.</p><button onclick="comingSoon()">Open Material</button></article>
+    <article class="card"><span class="icon">💻</span><h3>Computer</h3><p>Computer awareness and MCQ practice.</p><button onclick="comingSoon()">Open Material</button></article>
+  </div>
+</section>
+
+<section id="papers" class="section">
+  <div class="section-head"><div><span class="eyebrow">PRACTICE</span><h2>📄 Previous Year Papers</h2></div></div>
+  <div class="grid">
+    <article class="card"><h3>HSSC PYQ</h3><p>Haryana exams previous year questions.</p><button onclick="comingSoon()">View PYQ</button></article>
+    <article class="card"><h3>Haryana Police PYQ</h3><p>Police recruitment practice papers.</p><button onclick="comingSoon()">View PYQ</button></article>
+    <article class="card"><h3>SSC PYQ</h3><p>CGL, CHSL, MTS and GD practice.</p><button onclick="comingSoon()">View PYQ</button></article>
+    <article class="card"><h3>Railway PYQ</h3><p>RRB exam previous papers.</p><button onclick="comingSoon()">View PYQ</button></article>
+  </div>
+</section>
+
+<section id="links" class="section alt">
+  <div class="section-head"><div><span class="eyebrow">DIRECT ACCESS</span><h2>🔗 Important Official Links</h2></div></div>
+  <div class="link-list">
+    <a href="https://www.hssc.gov.in/" target="_blank">HSSC <span>↗</span></a>
+    <a href="https://ssc.gov.in/" target="_blank">SSC <span>↗</span></a>
+    <a href="https://upsc.gov.in/" target="_blank">UPSC <span>↗</span></a>
+    <a href="https://www.rrbapply.gov.in/" target="_blank">Railway / RRB <span>↗</span></a>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>🚀 Keep preparing with The Nalwa Library</h2>
+  <p>Save this website on your phone for quick access.</p>
+  <button class="btn primary" onclick="addShortcut()">＋ Add to Home Screen</button>
+</section>
+</main>
+
+<footer><b>The Nalwa Library</b><p>Made for students & exam aspirants.</p><small>© 2026 The Nalwa Library</small></footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
